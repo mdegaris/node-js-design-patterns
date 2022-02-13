@@ -1,0 +1,55 @@
+{
+  "name": "nodejs-design-patterns-third-edition",
+  "version": "1.0.0",
+  "description": "Node.Js Design Patterns Third Edition, published by Packt",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PacktPublishing/Node.js-Design-Patterns-Third-Edition.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Design Patterns",
+    "Book"
+  ],
+  "contributors": [
+    {
+      "name": "Mario Casciaro"
+    },
+    {
+      "name": "Luciano Mammino",
+      "url": "https://loige.co"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PacktPublishing/Node.js-Design-Patterns-Third-Edition/issues"
+  },
+  "homepage": "https://github.com/PacktPublishing/Node.js-Design-Patterns-Third-Edition#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {}
+}
